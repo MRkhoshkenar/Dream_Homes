@@ -1,0 +1,125 @@
+.blogs {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  padding-top: 10rem;
+  row-gap: 4rem;
+
+  &__heading {
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: $color_primary;
+  }
+
+  &__contents {
+    grid-row: 2/-1;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 4rem;
+
+    @include respond(tab-port) {
+      row-gap: 4rem;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 4rem;
+
+  @include respond(tab-port) {
+    grid-template-rows: 1fr max-content;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.3rem;
+  }
+
+  &__text-box {
+    grid-column: 2/-1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+
+    @include respond(tab-port) {
+      grid-column: 1/-1;
+      grid-row: 2/-1;
+      padding: 3rem;
+    }
+
+    &__heading-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    h4 {
+      font-size: 2.4rem;
+      line-height: 1.1;
+      color: rgba($color-primary, 0.8);
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: rgba($color-primary, 0.6);
+    }
+
+    a {
+      &:link,
+      &:visited {
+        color: $color-secondary-dark;
+        font-weight: $semi-bold_500;
+        border-radius: 0.3rem;
+        padding: 0.5rem 0;
+        transition: all 0.3s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-light;
+        background-color: $color-secondary-dark;
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+
+  &__img {
+    grid-column: 1/2;
+
+    @include respond(tab-port) {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    &__item {
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.3rem;
+    }
+  }
+
+  &--1 {
+    grid-row: 1/2;
+  }
+
+  &--2 {
+    grid-row: 2/3;
+  }
+
+  &--3 {
+    grid-row: 3/-1;
+  }
+}

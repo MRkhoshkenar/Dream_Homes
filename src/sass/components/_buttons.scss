@@ -1,0 +1,61 @@
+.btn {
+  font-size: 1.8rem;
+  padding: 1.2rem 3.6rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--red {
+    background-color: $color-secondary;
+    color: #fff;
+    border: none;
+    transition: all 0.3s;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+      padding: 1rem 3rem;
+    }
+  }
+
+  &--red:hover {
+    background-color: $color-secondary-dark;
+  }
+
+  &--gray {
+    background-color: #eee;
+    color: rgba($color-primary, 0.8);
+    transition: all 0.25s;
+    font-weight: $semi-bold_500;
+
+    @include respond(tab-land) {
+      color: $color-light;
+      background-color: $color-primary;
+      box-shadow: inset 0 0 0 2px $color-light;
+    }
+  }
+
+  &--gray:hover {
+    box-shadow: inset 0 0 0 2px rgba($color-primary, 0.8);
+    background-color: #eee;
+
+    @include respond(tab-land) {
+      background-color: $color-light;
+      color: $color-primary;
+      box-shadow: none;
+    }
+  }
+
+  &--white {
+    background-color: $color-primary;
+    box-shadow: inset 0 0 0 2px $color-grey-light;
+
+    color: $color-light;
+    padding: 1.5rem 3rem;
+    transition: all 0.3s;
+  }
+
+  &--white:hover {
+    padding: 1.5rem 4.5rem;
+  }
+}

@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 43.75%;
+  }
+
+  @include respond(small-phone) {
+    font-size: 37.5%;
+  }
+}
+
+.container {
+  font-family: $primary-font;
+  font-size: 1.6rem;
+  color: $color-grey-light;
+  font-weight: $default_400;
+  line-height: 1.2;
+  background-color: #eee;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-grey-dark;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+  &--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+}
+
+img {
+  transition: filter 0.5s;
+}
+
+.lazy-img {
+  filter: blur(20px);
+}

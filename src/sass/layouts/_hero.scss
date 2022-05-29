@@ -1,0 +1,66 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(#222, 0.5), rgba(#222, 0.5)),
+    url(../imgs/hero-image-retina.webp);
+  background-position: bottom;
+  background-size: cover;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    @include respond(phone) {
+      row-gap: 3rem;
+    }
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+
+      @include respond(phone) {
+        row-gap: 3rem;
+      }
+
+      h1 {
+        color: $color-light;
+        font-size: 6.8rem;
+        line-height: 1.15;
+        font-weight: $bold_600;
+        text-transform: uppercase;
+        text-align: center;
+        animation: moveInLeft 1s ease-out;
+
+        @include respond(phone) {
+          font-size: 4.5rem;
+        }
+      }
+      p {
+        color: $color-light;
+        font-size: 2rem;
+        font-weight: $default_400;
+        text-align: center;
+        line-height: $Paragraph_default__LH;
+        animation: moveInRight 1s ease-out;
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+
+        span {
+          color: $color-secondary;
+          font-weight: $semi-bold_500;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    align-self: center;
+    margin-top: 5rem;
+    animation: moveInBottom 1s ease-out;
+  }
+}

@@ -1,0 +1,98 @@
+.search-box {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  justify-self: center;
+  align-self: end;
+
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4rem 6rem;
+  background-color: $color-primary;
+  border-radius: 0.3rem;
+  box-shadow: 0 5px 10px rgba($color-grey-dark, 0.5);
+  transform: translateY(50%);
+
+  @include respond(tab-land) {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color-primary, 0.85);
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+    backdrop-filter: blur(5px) !important;
+    transform: translateY(0);
+  }
+
+  &__inputs {
+    display: flex;
+    gap: 2rem;
+    animation: moveInLeft 1.5s ease-out;
+
+    @include respond(tab-land) {
+      width: 50%;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__input {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+    font-weight: $semi-bold_500;
+    color: $color-secondary-dark;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      box-shadow: inset 0 0 0 2px $color-secondary-dark;
+    }
+
+    &::placeholder {
+      color: rgba($color-secondary-dark, 0.6);
+      font-weight: $bold_600;
+    }
+  }
+
+  a {
+    padding: 1.3rem 6rem;
+    animation: moveInRight 1.5s ease-out;
+
+    @include respond(tab-land) {
+      width: 30%;
+      transition: all 0.3s;
+
+      &:hover {
+        width: 50%;
+      }
+    }
+  }
+  &__close {
+    display: none !important;
+    @include respond(tab-land) {
+      display: block !important;
+      position: absolute;
+      top: 4rem;
+      right: 3rem;
+      font-size: 4rem;
+      color: $color-light;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        color: $color-secondary-dark;
+      }
+    }
+  }
+}

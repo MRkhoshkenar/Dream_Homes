@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Smooch&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <script defer src="src/scripts/main.js"></script>
+    <title>Dream Houses</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar__logo">
+          <i class="ph-house-line-bold navbar__logo__img"></i>
+          <span class="navbar__logo__text">Dream Homes</span>
+        </div>
+
+        <div class="navbar__btns">
+          <div class="navbar__btns-search">
+            <i class="ph-magnifying-glass navbar__btns-search__icon"></i>
+          </div>
+
+          <div class="navbar__btns-bars">
+            <i class="ph-list navbar__btns-bars__icon"></i>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <i class="ph-x-square main-nav__close"></i>
+        <div class="main-nav__logo">
+          <i class="ph-house-line-bold main-nav__logo__img"></i>
+          <span class="main-nav__logo__text">Dream Homes</span>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#explore" class="main-nav__link">Explore</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#resource" class="main-nav__link">Resource</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#gallery" class="main-nav__link">Gallery</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#blogs" class="main-nav__link">Blogs</a>
+          </li>
+        </ul>
+
+        <div class="main-nav__signing">
+          <a href="" class="btn btn--gray">Sign in</a>
+          <a href="" class="btn btn--red">Sign up</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero__text-box">
+          <div class="hero__text-box__heading">
+            <h1>
+              Your dream's home <br />
+              is waiting for you
+            </h1>
+            <p>
+              We have more than <span>200k</span> properties around to world to
+              show you
+            </p>
+          </div>
+          <a href="#" class="btn btn--white hero__btn">Explore more</a>
+        </div>
+      </section>
+      <div class="search-box">
+        <div class="search-box__inputs">
+          <i class="ph-x-square search-box__close"></i>
+          <input type="text" class="search-box__input" placeholder="Location" />
+          <input type="text" class="search-box__input" placeholder="Type" />
+          <input type="text" class="search-box__input" placeholder="Price" />
+        </div>
+        <a href="#" class="btn btn--red">Search</a>
+      </div>
+    </header>
+    <section class="features section">
+      <figure class="features__img-box">
+        <img
+          src="src/imgs/features-image-lazy.webp"
+          data-src="src/imgs/features-image-high.webp"
+          alt="Beautiful house image"
+          class="features__img-box__item lazy-img"
+        />
+      </figure>
+      <div class="features__text-box">
+        <div class="features__text-box__heading">
+          <h3>
+            We are the best and most trusted <span>Real estate agent</span>
+          </h3>
+          <p class="features__text-box__text">
+            We've helped a lot of people to find their dream homes.
+          </p>
+        </div>
+        <ul class="features__text-box__list">
+          <li class="features__text-box__item">
+            <i class="ph-check features__icons features__icons--primary"></i>
+            <p>678k buys have worked with us</p>
+          </li>
+          <li class="features__text-box__item">
+            <i class="ph-check features__icons features__icons--secondary"></i>
+            <p>Professional and experimental resources</p>
+          </li>
+          <li class="features__text-box__item">
+            <i class="ph-check features__icons features__icons--gray"></i>
+            <p>Provide the best services for users</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="homes section" id="explore">
+      <div class="homes__text-box">
+        <h2 class="homes__text-box__heading">Special Homes</h2>
+        <p class="homes__text-box__text">
+          Find your place with an immersive photo experience and the most
+          listings, including things you wont't find anywhere else.
+        </p>
+      </div>
+      <section class="homes__cards">
+        <div class="home-card">
+          <figure class="home-card__img-box">
+            <img
+              src="src/imgs/home 1.webp"
+              alt="Home Image"
+              class="home-card__img"
+            />
+          </figure>
+          <div class="home-card__details">
+            <span class="home-card__details__price">$ 4.600.000</span>
+            <span class="home-card__details__status">For Sale</span>
+            <address class="home-card__details__address">
+              Lorem ipsum, dolor sit amet.
+            </address>
+            <div class="home-card__details__rooms flex">
+              <i class="ph-bed home-card__icon"></i>
+              <span>3 Bedrooms</span>
+            </div>
+            <div class="home-card__details__area flex">
+              <i class="ph-frame-corners home-card__icon"></i>
+              <span>1000 m<sup>2</sup> </span>
+            </div>
+            <div class="home-card__details__garage flex">
+              <i class="ph-car home-card__icon"></i>
+              <span>2 spaces</span>
+            </div>
+            <div class="home-card__details__location flex">
+              <i class="ph-map-pin home-card__icon"></i>
+              <span>Germany</span>
+            </div>
+          </div>
+          <a href="#" class="home-card__btn--sale btn">More details</a>
+        </div>
+        <div class="home-card">
+          <figure class="home-card__img-box">
+            <img
+              src="src/imgs/home 2.webp"
+              alt="Home Image"
+              class="home-card__img"
+            />
+          </figure>
+          <div class="home-card__details">
+            <span class="home-card__details__price">$ 6.350.000</span>
+            <span class="home-card__details__status">For Sale</span>
+            <address class="home-card__details__address">
+              Lorem ipsum, dolor sit amet.
+            </address>
+            <div class="home-card__details__rooms flex">
+              <i class="ph-bed home-card__icon"></i>
+              <span>5 Bedrooms</span>
+            </div>
+            <div class="home-card__details__area flex">
+              <i class="ph-frame-corners home-card__icon"></i>
+              <span>1500 m<sup>2</sup> </span>
+            </div>
+            <div class="home-card__details__garage flex">
+              <i class="ph-car home-card__icon"></i>
+              <span>3 spaces</span>
+            </div>
+            <div class="home-card__details__location flex">
+              <i class="ph-map-pin home-card__icon"></i>
+              <span>USA</span>
+            </div>
+          </div>
+          <a href="#" class="home-card__btn--sale btn">More details</a>
+        </div>
+        <div class="home-card">
+          <figure class="home-card__img-box">
+            <img
+              src="src/imgs/home 3.webp"
+              alt="Home Image"
+              class="home-card__img"
+            />
+          </figure>
+          <div class="home-card__details">
+            <span class="home-card__details__price">$ 3.400.000</span>
+            <span class="home-card__details__status">For Sale</span>
+            <address class="home-card__details__address">
+              Lorem ipsum, dolor sit amet.
+            </address>
+            <div class="home-card__details__rooms flex">
+              <i class="ph-bed home-card__icon"></i>
+              <span>3 Bedrooms</span>
+            </div>
+            <div class="home-card__details__area flex">
+              <i class="ph-frame-corners home-card__icon"></i>
+              <span>1300 m<sup>2</sup> </span>
+            </div>
+            <div class="home-card__details__garage flex">
+              <i class="ph-car home-card__icon"></i>
+              <span>4 spaces</span>
+            </div>
+            <div class="home-card__details__location flex">
+              <i class="ph-map-pin home-card__icon"></i>
+              <span>Canada</span>
+            </div>
+          </div>
+          <a href="#" class="home-card__btn--sale btn">More details</a>
+        </div>
+        <div class="home-card">
+          <figure class="home-card__img-box">
+            <img
+              src="src/imgs/home 4.webp"
+              alt="Home Image"
+              class="home-card__img"
+            />
+          </figure>
+          <div class="home-card__details">
+            <span class="home-card__details__price">$ 3.400.000</span>
+            <span class="home-card__details__status">For Sale</span>
+            <address class="home-card__details__address">
+              Lorem ipsum, dolor sit amet.
+            </address>
+            <div class="home-card__details__rooms flex">
+              <i class="ph-bed home-card__icon"></i>
+              <span>3 Bedrooms</span>
+            </div>
+            <div class="home-card__details__area flex">
+              <i class="ph-frame-corners home-card__icon"></i>
+              <span>1300 m<sup>2</sup> </span>
+            </div>
+            <div class="home-card__details__garage flex">
+              <i class="ph-car home-card__icon"></i>
+              <span>4 spaces</span>
+            </div>
+            <div class="home-card__details__location flex">
+              <i class="ph-map-pin home-card__icon"></i>
+              <span>Canada</span>
+            </div>
+          </div>
+          <a href="#" class="home-card__btn--sale btn">More details</a>
+        </div>
+        <div class="home-card">
+          <figure class="home-card__img-box">
+            <img
+              src="src/imgs/home 5.webp"
+              alt="Home Image"
+              class="home-card__img"
+            />
+          </figure>
+          <div class="home-card__details">
+            <span class="home-card__details__price">$ 3.400.000</span>
+            <span class="home-card__details__status">For Sale</span>
+            <address class="home-card__details__address">
+              Lorem ipsum, dolor sit amet.
+            </address>
+            <div class="home-card__details__rooms flex">
+              <i class="ph-bed home-card__icon"></i>
+              <span>3 Bedrooms</span>
+            </div>
+            <div class="home-card__details__area flex">
+              <i class="ph-frame-corners home-card__icon"></i>
+              <span>1300 m<sup>2</sup> </span>
+            </div>
+            <div class="home-card__details__garage flex">
+              <i class="ph-car home-card__icon"></i>
+              <span>4 spaces</span>
+            </div>
+            <div class="home-card__details__location flex">
+              <i class="ph-map-pin home-card__icon"></i>
+              <span>Canada</span>
+            </div>
+          </div>
+          <a href="#" class="home-card__btn--sale btn">More details</a>
+        </div>
+        <div class="home-card">
+          <figure class="home-card__img-box">
+            <img
+              src="src/imgs/home 6.webp"
+              alt="Home Image"
+              class="home-card__img"
+            />
+          </figure>
+          <div class="home-card__details">
+            <span class="home-card__details__price">$ 3.400.000</span>
+            <span class="home-card__details__status">For Sale</span>
+            <address class="home-card__details__address">
+              Lorem ipsum, dolor sit amet.
+            </address>
+            <div class="home-card__details__rooms flex">
+              <i class="ph-bed home-card__icon"></i>
+              <span>3 Bedrooms</span>
+            </div>
+            <div class="home-card__details__area flex">
+              <i class="ph-frame-corners home-card__icon"></i>
+              <span>1300 m<sup>2</sup> </span>
+            </div>
+            <div class="home-card__details__garage flex">
+              <i class="ph-car home-card__icon"></i>
+              <span>4 spaces</span>
+            </div>
+            <div class="home-card__details__location flex">
+              <i class="ph-map-pin home-card__icon"></i>
+              <span>Canada</span>
+            </div>
+          </div>
+          <a href="#" class="home-card__btn--sale btn">More details</a>
+        </div>
+      </section>
+    </section>
+    <section class="services section">
+      <div class="services__text-box">
+        <h2 class="services__text-box__heading">Our Services</h2>
+        <p class="services__text-box__text">
+          When it comes to real estate and properties, we're very happy step of
+          the way.
+        </p>
+      </div>
+      <section class="services__list">
+        <div class="services__list__item">
+          <i
+            class="ph-umbrella services__list__item__icon services__list__item__icon--primary"
+          ></i>
+          <h5 class="services__list__item__heading">Property Insurance</h5>
+          <p class="services__list__item__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+            vitae.
+          </p>
+        </div>
+        <div class="services__list__item">
+          <i
+            class="ph-envelope services__list__item__icon services__list__item__icon--secondary"
+          ></i>
+          <h5 class="services__list__item__heading">Property Insurance</h5>
+          <p class="services__list__item__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+            vitae.
+          </p>
+        </div>
+        <div class="services__list__item">
+          <i
+            class="ph-money services__list__item__icon services__list__item__icon--gray"
+          ></i>
+          <h5 class="services__list__item__heading">Property Insurance</h5>
+          <p class="services__list__item__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+            vitae.
+          </p>
+        </div>
+      </section>
+    </section>
+    <section class="gallery section" id="gallery">
+      <div class="gallery__item slider">
+        <div class="gallery__item__content gallery__item__content--1 slide">
+          <div class="gallery__item__content__text-box">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn--red">Contact Us</a>
+          </div>
+        </div>
+        <div class="gallery__item__content gallery__item__content--2 slide">
+          <div class="gallery__item__content__text-box">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn--red">Contact Us</a>
+          </div>
+        </div>
+        <div class="gallery__item__content gallery__item__content--3 slide">
+          <div class="gallery__item__content__text-box">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn--red">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="arrow arrow--left">
+        <i class="ph-caret-left arrow__icon"></i>
+      </div>
+      <div class="arrow arrow--right">
+        <i class="ph-caret-right arrow__icon"></i>
+      </div>
+      <div class="dots">
+        <!-- <div class="dots__dot dots__dot--active"></div>
+        <div class="dots__dot"></div>
+        <div class="dots__dot"></div> -->
+      </div>
+    </section>
+    <section class="blogs section" id="blogs">
+      <h2 class="blogs__heading">Our best blogs</h2>
+      <div class="blogs__contents">
+        <div class="content content--1">
+          <figure class="content__img content--1__img">
+            <img
+              src="src/imgs/blogs-1-image-high.webp"
+              alt="Blogs Image"
+              class="content__img__item content--1__img__item"
+            />
+          </figure>
+          <div class="content__text-box content--1__text-box">
+            <div class="content__text-box__heading-box">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                animi!
+              </h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisi cing elit.
+                Eaque, possimus!
+              </p>
+            </div>
+            <a href="#">Read More &rarr;</a>
+          </div>
+        </div>
+
+        <div class="content content--2">
+          <figure class="content__img content--2__img">
+            <img
+              src="src/imgs/blogs-2-image-high.webp"
+              alt="Blogs Image"
+              class="content__img__item content--2__img__item"
+            />
+          </figure>
+          <div class="content__text-box content--2__text-box">
+            <div class="content__text-box__heading-box">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                animi!
+              </h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisi cing elit.
+                Eaque, possimus!
+              </p>
+            </div>
+            <a href="#">Read More &rarr;</a>
+          </div>
+        </div>
+        <div class="content content--3">
+          <figure class="content__img content--3__img">
+            <img
+              src="src/imgs/blogs-3-image-high.webp"
+              alt="Blogs Image"
+              class="content__img__item content--3__img__item"
+            />
+          </figure>
+          <div class="content__text-box content--3__text-box">
+            <div class="content__text-box__heading-box">
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                animi!
+              </h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisi cing elit.
+                Eaque, possimus!
+              </p>
+            </div>
+            <a href="#">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="choose section" id="resource">
+      <div class="choose__img-box">
+        <figure class="choose__img-box__item choose__img-box__item--1">
+          <img
+            src="src/imgs/choose-image-main-lazy.webp"
+            data-src="src/imgs/choose-image-main-high.webp"
+            alt="Beautiful House Image"
+            class="choose__img-box__item__img"
+          />
+        </figure>
+        <figure class="choose__img-box__item choose__img-box__item--2">
+          <img
+            src="src/imgs/choose-image-second-lazy.webp"
+            data-src="src/imgs/choose-image-second-high.webp"
+            alt="Beautiful House Image"
+            class="choose__img-box__item__img"
+          />
+        </figure>
+        <i class="ph-play choose__icon"></i>
+      </div>
+      <section class="choose__content">
+        <div class="choose__content__heading-box">
+          <h2>
+            Why <br />
+            Choose Us
+          </h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+            quasi magni dolorem.
+          </p>
+        </div>
+        <a href="#" class="btn btn--red">Read More</a>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="footer__about">
+        <div class="footer__about__logo-box">
+          <i class="ph-house-line-bold footer__about__logo-box__img"></i>
+          <span class="footer__about__logo-box__text">Dream Homes</span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quo
+          eveniet, mollitia nihil asperiores quas earum quae dignissimos
+          exercitationem unde.
+        </p>
+        <div class="footer__about__social-box">
+          <h6>Follow Us</h6>
+          <div class="footer__about__social-box__content">
+            <i
+              class="ph-instagram-logo footer__about__social-box__content__icon footer__about__social-box__content__icon--instagram"
+            ></i>
+            <i
+              class="ph-facebook-logo footer__about__social-box__content__icon footer__about__social-box__content__icon--facebook"
+            ></i>
+            <i
+              class="ph-telegram-logo footer__about__social-box__content__icon footer__about__social-box__content__icon--telegram"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__nav footer__nav__item">
+        <h4>Information</h4>
+        <ul class="footer__nav__list">
+          <li>
+            <a href="#" class="footer__nav__link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav__link">Explore</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav__link">Resources</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav__link">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav__link">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav footer__nav__item">
+        <h4>Information</h4>
+        <ul class="footer__nav__list">
+          <li>
+            <a href="#" class="footer__nav__link">Properties</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav__link">Supports</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav__link">Terms & Condition</a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav__link">Privacy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav footer__nav__item">
+        <h4>Information</h4>
+        <ul class="footer__nav__list">
+          <li>
+            <a href="#" class="footer__nav__link">+1 1234 25478 96 </a>
+          </li>
+          <li>
+            <a href="#" class="footer__nav__link"> dreamhouses@hello.com </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
